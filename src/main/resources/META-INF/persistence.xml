@@ -1,0 +1,13 @@
+<persistence>
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <persistence-unit name="some">
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/somedb" />
+            <property name="javax.persistence.jdbc.user" value="someuser" />
+            <property name="javax.persistence.jdbc.password" value="somepassword" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+        </properties>
+    </persistence-unit>
+</persistence>
